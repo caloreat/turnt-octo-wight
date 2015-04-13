@@ -4,6 +4,18 @@ Rails.application.routes.draw do
 
   root 'pages#index'
 
+  get 'constraints/calories' => 'constraints#calories'
+  get 'constraints/nutrients' => 'constraints#nutrients'
+  get 'constraints/budget' => 'constraints#budget'
+  get 'constraints/time' => 'constraints#time'
+  get 'constraints/tastes' => 'constraints#tastes'
+  get 'constraints/restrictions' => 'constraints#restrictions'
+  get 'constraints/location' => 'constraints#location'
+
+  get 'plan/overview' => 'plan#overview'
+  get 'plan/history' => 'plan#history'
+  get 'plan/grocery_list' => 'plan#grocery_list'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
